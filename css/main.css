@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.card{
+    width: 300px;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.card .img img{
+    display: inline-block;
+    width: 100%;
+}
+
+.card .body{
+    padding: 20px;
+}
+.card .body .logo{
+    letter-spacing: 5px;
+    opacity: 0.8;
+}
+
+.card .body h1{
+    margin: 20px 0px;
+    font-family: "Fraunces", serif;
+    font-weight: bold;
+}
+
+.card .body p{
+    opacity: 0.8;
+}
+
+.card .body .price{
+    margin: 20px 0px;
+    font-size: 1.5rem;
+    color: hsl(158, 36%, 37%);
+}
+
+.card .body .price .old-price{
+    margin-left: 10px;
+    font-size: 0.9rem;
+    text-decoration: line-through;
+    color: black;
+    opacity: 0.8;
+}
+
+.card .body .btn{
+    padding: 10px;
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .body .btn:hover{
+    background-color: hsl(158, 36%, 20%);
+    cursor: pointer;
+}
+
+
+.card .body .btn .cart-icon{
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+
+
+/********************* responsive design *********************/
+
+
+@media screen and (min-width: 576px) {
+    .card{
+        width: 500px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .card .img img{
+    content: url('/images/image-product-desktop.jpg');
+    height: 100%;
+    }  
+} 
