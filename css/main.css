@@ -102,7 +102,7 @@ main{
         grid-template-columns: 1fr 1fr;
     }
     .card .img img{
-    content: url('/images/image-product-desktop.jpg');
+    content: url('../images/image-product-desktop.jpg');
     height: 100%;
     }  
 } 
